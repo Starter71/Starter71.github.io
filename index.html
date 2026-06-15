@@ -2,34 +2,41 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Meine erste Webseite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Webseite</title>
     <style>
+        /* Sorgt dafür, dass das Hintergrundbild den ganzen Bildschirm füllt */
         body {
             margin: 0;
             padding: 0;
             height: 100vh;
-            background-image: url('BuergerserviceOverview.jpg'); /* Dein Bildname */
+            background-image: url('BuergerserviceOverview.jpg'); /* Stelle sicher, dass dein Bild so heißt */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
-    </style>
-        <!-- Das ist der anklickbare Bereich -->
-    <a href="DigitalChannel.html" style="
-        position: absolute; 
-        top: 30%;    /* Abstand von oben in Prozent */
-        left: 15%;   /* Abstand von links in Prozent */
-        width: 150px; 
-        height: 250px; 
-        display: block;
-        background-color: rgba(255, 255, 255, 0.2); /* Leichtes Weiß, damit man es sieht */
-        border: 2px solid white;
-        border-radius: 10px;
-        text-decoration: none;">
-    </a>
 
+        /* Der anklickbare Bereich (Hotspot) */
+        .hotspot {
+            position: absolute;
+            /* Hier kannst du die Position anpassen */
+            top: 50%; 
+            left: 15%;
+            /* Größe des Bereichs */
+            width: 150px; 
+            height: 150px;
+            display: block;
+            /* Optional: Zeige einen Rahmen, während du die Position testest */
+            /* border: 2px solid white; */
+            /* cursor: pointer; sorgt dafür, dass sich der Mauszeiger ändert */
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Der Link-Bereich, der zur zweiten Seite führt -->
+    <a href="sDigitalChannel.html" class="hotspot"></a>
+
 </body>
 </html>
-
