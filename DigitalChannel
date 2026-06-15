@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Unterseite</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            /* Dein Hintergrundbild für diese Seite */
+            background-image: url('Kommunikation.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Der Zurück-Button */
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Halbtransparentes Weiß */
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background-color: rgba(255, 255, 255, 1); /* Wird beim Drüberfahren weißer */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Der Link zurück zur Hauptseite -->
+    <a href="index.html" class="back-button">Zurück</a>
+
+</body>
+</html>
